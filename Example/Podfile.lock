@@ -1,0 +1,16 @@
+PODS:
+  - SwipePopNavigation (0.0.1)
+
+DEPENDENCIES:
+  - SwipePopNavigation (from `../`)
+
+EXTERNAL SOURCES:
+  SwipePopNavigation:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwipePopNavigation: 88addec584ef7fc254b6a9f7bbb52be32891aa6a
+
+PODFILE CHECKSUM: 03ac2586c2f2156df593bf35c92e5013a2a01720
+
+COCOAPODS: 1.5.0

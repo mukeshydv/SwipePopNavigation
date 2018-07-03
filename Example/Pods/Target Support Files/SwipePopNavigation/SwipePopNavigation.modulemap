@@ -1,0 +1,6 @@
+framework module SwipePopNavigation {
+  umbrella header "SwipePopNavigation-umbrella.h"
+
+  export *
+  module * { export * }
+}
