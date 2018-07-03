@@ -9,10 +9,15 @@
 import UIKit
 
 class PopTransition: NSObject, UIViewControllerAnimatedTransitioning {
-    private var toViewController: UIViewController?
+    private weak var toViewController: UIViewController?
+    let config: PopNavigationControllerConfiguration
+    
+    init(_ config: PopNavigationControllerConfiguration) {
+        self.config = config
+    }
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 0.3
+        return config.transitionDuration
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
@@ -33,7 +38,7 @@ class PopTransition: NSObject, UIViewControllerAnimatedTransitioning {
         fromViewController.view.clipsToBounds = false
         
         let dimmingView = UIView(frame: toViewController.view.bounds)
-        let dimAmount: CGFloat = 0.1
+        let dimAmount: CGFloat = config.dimmingAlpha
         dimmingView.backgroundColor = UIColor(white: 0, alpha: dimAmount)
         toViewController.view.addSubview(dimmingView)
         
@@ -45,7 +50,7 @@ class PopTransition: NSObject, UIViewControllerAnimatedTransitioning {
         let tabBarControllerContainsToViewController = tabBarController?.viewControllers?.contains(toViewController) == true
         let tabBarControllerContainsNavController = tabBarController?.viewControllers?.contains(navController ?? UIViewController()) == true
         let isToViewControllerFirstInNavController = navController?.viewControllers.first == toViewController
-        let shouldAnimateTabBar = true
+        let shouldAnimateTabBar = config.shouldAnimateTabbar
         
         if shouldAnimateTabBar, let tabBar = tabBar, (tabBarControllerContainsToViewController || (isToViewControllerFirstInNavController && tabBarControllerContainsNavController)) {
             tabBar.layer.removeAllAnimations()
