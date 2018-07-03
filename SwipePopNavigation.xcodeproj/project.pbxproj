@@ -53,8 +53,8 @@
 		8BD7D53320EB5B3500DB52C7 = {
 			isa = PBXGroup;
 			children = (
-				8BD7D53F20EB5B3500DB52C7 /* SwipePopNavigation */,
-				8BD7D54A20EB5B3500DB52C7 /* SwipePopNavigationTests */,
+				8BD7D53F20EB5B3500DB52C7 /* Classes */,
+				8BD7D54A20EB5B3500DB52C7 /* Tests */,
 				8BD7D53E20EB5B3500DB52C7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,22 +68,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8BD7D53F20EB5B3500DB52C7 /* SwipePopNavigation */ = {
+		8BD7D53F20EB5B3500DB52C7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				8BD7D54020EB5B3500DB52C7 /* SwipePopNavigation.h */,
 				8BD7D54120EB5B3500DB52C7 /* Info.plist */,
 			);
-			path = SwipePopNavigation;
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		8BD7D54A20EB5B3500DB52C7 /* SwipePopNavigationTests */ = {
+		8BD7D54A20EB5B3500DB52C7 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				8BD7D54B20EB5B3500DB52C7 /* SwipePopNavigationTests.swift */,
 				8BD7D54D20EB5B3500DB52C7 /* Info.plist */,
 			);
-			path = SwipePopNavigationTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,7 +345,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwipePopNavigation/Info.plist;
+				INFOPLIST_FILE = Classes/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -369,7 +369,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwipePopNavigation/Info.plist;
+				INFOPLIST_FILE = Classes/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -388,7 +388,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SwipePopNavigationTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -405,7 +405,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SwipePopNavigationTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
