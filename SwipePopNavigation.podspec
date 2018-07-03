@@ -9,9 +9,9 @@
 Pod::Spec.new do |s|
   s.name         = "SwipePopNavigation"
   s.version      = "0.0.1"
-  s.summary      = "A short description of SwipePopNavigation."
+  s.summary      = "SwipePopNavigation is a library for creating a Swipable Navigation Controller"
   s.description  = <<-DESC
-            Create Instagram like navigation
+            Create Instagram like navigation, Use right swipe to pop back to previous view controller on whole screen.
                    DESC
 
   s.homepage     = "https://github.com/mukeshydv/SwipePopNavigation"
@@ -29,4 +29,6 @@ Pod::Spec.new do |s|
 
   s.framework  = "UIKit"
   s.requires_arc = true
+
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
 end
