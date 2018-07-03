@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "SwipePopNavigation"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "SwipePopNavigation is a library for creating a Swipable Navigation Controller"
   s.description  = <<-DESC
             Create Instagram like navigation, Use right swipe to pop back to previous view controller on whole screen.
